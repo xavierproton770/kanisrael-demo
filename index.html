@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>כאן ישראל</title>
 <meta name="description" content="כאן ישראל — אתר החדשות של ערי ויישובי ישראל מאז 2002. תצוגת הדגמה למערכת החדשה בשלושה עיצובים.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,12 +58,12 @@ html.tA body{margin:0;background:var(--ground);color:var(--ink);font-family:var(
 .tA .masthead{background:var(--surface);border-bottom:1px solid var(--rule)}
 .tA .masthead .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-top:22px;padding-bottom:18px;gap:24px}
 .tA .brand{display:flex;align-items:center;gap:16px;justify-self:start}
-.tA .brand .mark{width:54px;height:54px;flex:none;position:relative;background:var(--navy);border-radius:4px;overflow:hidden}
-.tA .brand .mark::before,.tA .brand .mark::after{content:"";position:absolute;left:0;right:0;height:5px;background:#fff;opacity:.9}
-.tA .brand .mark::before{top:9px}
-.tA .brand .mark::after{bottom:9px}
-.tA .brand .mark svg{position:absolute;inset:0;margin:auto;width:24px;height:24px}
-.tA .brand .name{font-family:var(--ff-display);font-weight:900;font-size:46px;line-height:1;color:var(--navy);letter-spacing:-.01em}
+.tA .brand .mark{height:62px;flex:none;display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.tA .brand .mark svg{height:100%;width:auto;display:block}
+.tA .brand .name{font-family:var(--ff-display);font-weight:900;font-size:48px;line-height:1;color:var(--navy);letter-spacing:-.01em;white-space:nowrap}
+.tA .brand .name .w1{color:var(--red)}
+.tA .brand .name .w2{color:var(--navy)}
+.tA .nav .mini .w1{color:var(--red)}
 .tA .brand .name small{display:block;font-family:var(--ff-body);font-weight:500;font-size:12.5px;letter-spacing:.06em;color:var(--muted);margin-top:6px}
 .tA .masthead .center{text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
 .tA .masthead .center b{display:block;font-family:var(--ff-display);font-size:15px;color:var(--ink);font-weight:500}
@@ -525,7 +530,8 @@ html.tA body{margin:0;background:var(--ground);color:var(--ink);font-family:var(
 .tA .masthead .wrap{grid-template-columns:1fr;gap:12px}
 .tA .masthead .center{display:none}
 .tA .masthead .tools{justify-self:start}
-.tA .brand .name{font-size:36px}
+.tA .brand .name{font-size:34px}
+.tA .brand .mark{height:48px}
 .tA .lead h2{font-size:30px}
 .tA .article-head h1{font-size:34px}
 .tA .op-grid{grid-template-columns:1fr}
@@ -597,12 +603,12 @@ html.tB body{margin:0;background:var(--ground);color:var(--ink);font-family:var(
 .tB .masthead{background:var(--surface);border-bottom:1px solid var(--rule)}
 .tB .masthead .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-top:22px;padding-bottom:18px;gap:24px}
 .tB .brand{display:flex;align-items:center;gap:16px;justify-self:start}
-.tB .brand .mark{width:54px;height:54px;flex:none;position:relative;background:var(--navy);border-radius:4px;overflow:hidden}
-.tB .brand .mark::before,.tB .brand .mark::after{content:"";position:absolute;left:0;right:0;height:5px;background:#fff;opacity:.9}
-.tB .brand .mark::before{top:9px}
-.tB .brand .mark::after{bottom:9px}
-.tB .brand .mark svg{position:absolute;inset:0;margin:auto;width:24px;height:24px}
-.tB .brand .name{font-family:var(--ff-display);font-weight:900;font-size:46px;line-height:1;color:var(--navy);letter-spacing:-.01em}
+.tB .brand .mark{height:62px;flex:none;display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.tB .brand .mark svg{height:100%;width:auto;display:block}
+.tB .brand .name{font-family:var(--ff-display);font-weight:900;font-size:48px;line-height:1;color:var(--navy);letter-spacing:-.01em;white-space:nowrap}
+.tB .brand .name .w1{color:var(--red)}
+.tB .brand .name .w2{color:var(--navy)}
+.tB .nav .mini .w1{color:var(--red)}
 .tB .brand .name small{display:block;font-family:var(--ff-body);font-weight:500;font-size:12.5px;letter-spacing:.06em;color:var(--muted);margin-top:6px}
 .tB .masthead .center{text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
 .tB .masthead .center b{display:block;font-family:var(--ff-display);font-size:15px;color:var(--ink);font-weight:500}
@@ -1069,7 +1075,8 @@ html.tB body{margin:0;background:var(--ground);color:var(--ink);font-family:var(
 .tB .masthead .wrap{grid-template-columns:1fr;gap:12px}
 .tB .masthead .center{display:none}
 .tB .masthead .tools{justify-self:start}
-.tB .brand .name{font-size:36px}
+.tB .brand .name{font-size:34px}
+.tB .brand .mark{height:48px}
 .tB .lead h2{font-size:30px}
 .tB .article-head h1{font-size:34px}
 .tB .op-grid{grid-template-columns:1fr}
@@ -1104,9 +1111,8 @@ html.tB body{font-weight:400}
 .tB .utility a:hover{color:var(--gold)}
 .tB .masthead{border-bottom:0;background:var(--ground)}
 .tB .masthead .wrap{padding-top:18px;padding-bottom:10px}
-.tB .brand .mark{border-radius:12px;background:var(--red);width:50px;height:50px}
-.tB .brand .mark::before,.tB .brand .mark::after{display:none}
-.tB .brand .name{color:var(--ink);font-size:42px;letter-spacing:-.02em}
+.tB .brand .mark{height:58px}
+.tB .brand .name{color:var(--ink);font-size:44px;letter-spacing:-.01em}
 .tB .brand .name small{font-weight:600;color:var(--muted);letter-spacing:.02em}
 .tB .masthead .center b{font-family:var(--ff-body);font-weight:700;color:var(--navy)}
 .tB .search{border-radius:999px;background:var(--surface);border-color:transparent}
@@ -1275,12 +1281,12 @@ html.tC body{margin:0;background:var(--ground);color:var(--ink);font-family:var(
 .tC .masthead{background:var(--surface);border-bottom:1px solid var(--rule)}
 .tC .masthead .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-top:22px;padding-bottom:18px;gap:24px}
 .tC .brand{display:flex;align-items:center;gap:16px;justify-self:start}
-.tC .brand .mark{width:54px;height:54px;flex:none;position:relative;background:var(--navy);border-radius:4px;overflow:hidden}
-.tC .brand .mark::before,.tC .brand .mark::after{content:"";position:absolute;left:0;right:0;height:5px;background:#fff;opacity:.9}
-.tC .brand .mark::before{top:9px}
-.tC .brand .mark::after{bottom:9px}
-.tC .brand .mark svg{position:absolute;inset:0;margin:auto;width:24px;height:24px}
-.tC .brand .name{font-family:var(--ff-display);font-weight:900;font-size:46px;line-height:1;color:var(--navy);letter-spacing:-.01em}
+.tC .brand .mark{height:62px;flex:none;display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.tC .brand .mark svg{height:100%;width:auto;display:block}
+.tC .brand .name{font-family:var(--ff-display);font-weight:900;font-size:48px;line-height:1;color:var(--navy);letter-spacing:-.01em;white-space:nowrap}
+.tC .brand .name .w1{color:var(--red)}
+.tC .brand .name .w2{color:var(--navy)}
+.tC .nav .mini .w1{color:var(--red)}
 .tC .brand .name small{display:block;font-family:var(--ff-body);font-weight:500;font-size:12.5px;letter-spacing:.06em;color:var(--muted);margin-top:6px}
 .tC .masthead .center{text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
 .tC .masthead .center b{display:block;font-family:var(--ff-display);font-size:15px;color:var(--ink);font-weight:500}
@@ -1747,7 +1753,8 @@ html.tC body{margin:0;background:var(--ground);color:var(--ink);font-family:var(
 .tC .masthead .wrap{grid-template-columns:1fr;gap:12px}
 .tC .masthead .center{display:none}
 .tC .masthead .tools{justify-self:start}
-.tC .brand .name{font-size:36px}
+.tC .brand .name{font-size:34px}
+.tC .brand .mark{height:48px}
 .tC .lead h2{font-size:30px}
 .tC .article-head h1{font-size:34px}
 .tC .op-grid{grid-template-columns:1fr}
@@ -1781,10 +1788,12 @@ html.tC body{font-size:17px;line-height:1.65}
 .tC .masthead{background:var(--ground);border-bottom:1px solid var(--rule)}
 .tC .masthead .wrap{padding-top:30px;padding-bottom:22px}
 .tC .brand{grid-column:2;grid-row:1;justify-self:center;flex-direction:column;gap:10px;text-align:center}
-.tC .brand .mark{width:36px;height:36px;background:transparent;border:1.5px solid var(--gold);border-radius:50%}
-.tC .brand .mark::before,.tC .brand .mark::after{display:none}
-.tC .brand .mark svg{width:18px;height:18px;stroke:var(--gold)}
-.tC .brand .name{font-size:66px;color:var(--ink);letter-spacing:.01em;line-height:.95}
+.tC .brand .mark{height:54px;filter:none}
+.tC .brand .name{font-size:64px;color:var(--ink);letter-spacing:.01em;line-height:.95}
+.tC .brand .name .w1{color:#E0483C}
+.tC .brand .name .w2{color:#8FB0F0}
+.tC .nav .mini .w1{color:#E0483C}
+.tC .nav .mini .w2{color:#8FB0F0}
 .tC .brand .name small{color:var(--gold);letter-spacing:.22em;font-size:11px;text-transform:uppercase;margin-top:12px}
 .tC .masthead .center{grid-column:1;grid-row:1;text-align:start;justify-self:start}
 .tC .masthead .center b{font-family:var(--ff-ui);color:var(--ink);font-weight:700;font-size:13px;letter-spacing:.04em}
@@ -1880,7 +1889,7 @@ html.tC body{font-size:17px;line-height:1.65}
 .tC footer .press{border-radius:0;border-color:var(--gold);color:var(--gold)}
 .tC footer .brand{flex-direction:row;text-align:start;gap:12px}
 .tC footer .brand .name{font-size:30px!important}
-.tC footer .brand .mark{width:30px!important;height:30px!important}
+.tC footer .brand .mark{height:34px!important}
 .tC .article-head{max-width:960px;text-align:center;padding-top:44px}
 .tC .article-head .crumbs{justify-content:center;letter-spacing:.06em;font-size:12px;text-transform:uppercase}
 .tC .article-head .crumbs a{color:var(--gold)}
@@ -1998,6 +2007,8 @@ html.tC body{font-size:17px;line-height:1.65}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 </style>
+</head>
+<body>
 <div class="progress" id="progress"></div>
 
 <div class="utility">
@@ -2020,8 +2031,8 @@ html.tC body{font-size:17px;line-height:1.65}
 <header class="masthead">
   <div class="wrap">
     <a class="brand" href="#/">
-      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 3l8 14H4z"/><path d="M12 21L4 7h16z"/></svg></span>
-      <span class="name">כאן ישראל<small>אתר האינטרנט של ערי ויישובי ישראל · נוסד 2002</small></span>
+      <span class="mark"><svg class="map" viewBox="0 0 60 164" aria-hidden="true"><defs><clipPath id="mapA"><path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z"/></clipPath></defs><g clip-path="url(#mapA)"><rect width="60" height="164" fill="#fff"/><rect y="22" width="60" height="11" fill="#0038B8"/><rect y="126" width="60" height="11" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="3.2" stroke-linejoin="round"><path d="M30 60 L47 90 L13 90 Z"/><path d="M30 100 L13 70 L47 70 Z"/></g></g><path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z" fill="none" stroke="#0038B8" stroke-width="2.4" stroke-linejoin="round"/></svg></span>
+      <span class="name"><span class="w1">כאן</span> <span class="w2">ישראל</span><small>אתר האינטרנט של ערי ויישובי ישראל · נוסד 2002</small></span>
     </a>
     <div class="center"><b>חבר מועצת העיתונות בישראל</b>סיקור עצמאי של 78 ערים ומועצות · 27,340 כתבות בארכיון</div>
     <div class="tools">
@@ -2033,7 +2044,7 @@ html.tC body{font-size:17px;line-height:1.65}
 
 <nav class="nav" id="nav" aria-label="מדורים">
   <div class="wrap">
-    <a class="mini" href="#/">כאן ישראל</a>
+    <a class="mini" href="#/"><span class="w1">כאן</span> <span class="w2">ישראל</span></a>
     <a href="#/" class="active">ראשי</a>
     <a href="#/" class="hot">חדשות ישראל</a>
     <a href="#/">ערים בישראל</a>
@@ -2620,7 +2631,7 @@ html.tC body{font-size:17px;line-height:1.65}
   <div class="wrap">
     <div class="cols">
       <div>
-        <a class="brand" href="#/" style="margin-bottom:12px"><span class="mark" aria-hidden="true" style="width:40px;height:40px"></span><span class="name" style="font-size:30px">כאן ישראל</span></a>
+        <a class="brand" href="#/" style="margin-bottom:12px"><span class="mark" style="height:44px"><svg class="map" viewBox="0 0 60 164" aria-hidden="true"><defs><clipPath id="mapF"><path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z"/></clipPath></defs><g clip-path="url(#mapF)"><rect width="60" height="164" fill="#fff"/><rect y="22" width="60" height="11" fill="#0038B8"/><rect y="126" width="60" height="11" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="3.2" stroke-linejoin="round"><path d="M30 60 L47 90 L13 90 Z"/><path d="M30 100 L13 70 L47 70 Z"/></g></g><path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z" fill="none" stroke="#0038B8" stroke-width="2.4" stroke-linejoin="round"/></svg></span><span class="name" style="font-size:30px"><span class="w1">כאן</span> <span class="w2">ישראל</span></span></a>
         <p style="color:var(--ink-2);max-width:40ch;font-weight:300">אתר האינטרנט של ערי ויישובי ישראל. עיתונות מקומית עצמאית מאז 2002, מבית ״כאן נעים״. העורך: משה נעים.</p>
         <span class="press">✓ חבר מועצת העיתונות בישראל</span>
       </div>
@@ -2814,3 +2825,6 @@ html.tC body{font-size:17px;line-height:1.65}
   document.addEventListener('keydown',e=>{if(e.target.matches('input,textarea,select'))return;const m={'1':'a','2':'b','3':'c'}[e.key];if(m)setTheme(m,true);});
 })();
 </script>
+
+</body>
+</html>
