@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>כאן ישראל החדש · סיור קצר</title>
+<meta name="description" content="סיור קצר באתר החדש של כאן ישראל.">
+<script>document.documentElement.className+=" js"</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:"Frank Ruhl Libre";font-weight:400 900;font-display:swap;src:url("../preview/wp-content/themes/kanisrael/assets/fonts/frank-ruhl-libre-hebrew.woff2") format("woff2");unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+FB1D-FB4F}
+@font-face{font-family:"Frank Ruhl Libre";font-weight:400 900;font-display:swap;src:url("../preview/wp-content/themes/kanisrael/assets/fonts/frank-ruhl-libre-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:"Heebo";font-weight:300 700;font-display:swap;src:url("../preview/wp-content/themes/kanisrael/assets/fonts/heebo-hebrew.woff2") format("woff2");unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+FB1D-FB4F}
+@font-face{font-family:"Heebo";font-weight:300 700;font-display:swap;src:url("../preview/wp-content/themes/kanisrael/assets/fonts/heebo-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+:root{
+  --ground:#F3F3EF;--surface:#fff;--surface-2:#EBEBE6;--ink:#15171C;--ink-2:#3A3E46;--muted:#5F646D;--rule:#D8D9D3;
+  --navy:#12377A;--navy-deep:#0B2352;--navy-soft:#E3EAF7;--red:#B4261F;--brand-red:#F21603;--green:#2E6B3E;--green-soft:#E1EEE3;
+  --display:"Frank Ruhl Libre",Georgia,serif;--body:"Heebo","Segoe UI",Arial,sans-serif;
+  --r:14px;--shadow:0 24px 60px -28px rgba(11,35,82,.45);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 18px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.12;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:var(--red);letter-spacing:.01em}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--brand-red);border-radius:2px}
+.lead{font-size:20px;color:var(--ink-2);max-width:60ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 18px var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--navy);color:#fff;box-shadow:0 10px 24px -12px rgba(18,55,122,.8)}
+.btn-primary:hover{background:var(--navy-deep)}
+.btn-ghost{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-ghost:hover{background:var(--navy-soft)}
+:focus-visible{outline:3px solid var(--brand-red);outline-offset:3px}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:rgba(243,243,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:800 21px var(--display);text-decoration:none}
+.brand img{width:34px;height:34px}
+.brand b{color:var(--red)}
+.top nav{display:flex;gap:4px;font-size:15px;font-weight:500}
+.top nav a{text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--ink-2)}
+.top nav a:hover{background:var(--surface-2)}
+@media (max-width:900px){.top nav{display:none}}
+
+/* hero */
+.hero{padding:72px 0 40px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(40px,6.4vw,78px);margin:16px 0 20px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--navy);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;inset-inline:0;bottom:.06em;height:.12em;background:var(--brand-red);border-radius:3px;transform-origin:right;animation:rule 1s .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;margin-top:54px}
+.facts div{background:var(--surface);padding:20px 22px}
+.facts strong{display:block;font:800 34px/1 var(--display);color:var(--navy)}
+.facts span{font-size:15px;color:var(--muted)}
+@media (max-width:720px){.facts{grid-template-columns:repeat(2,1fr)}.hero{padding-top:44px}}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:center}
+.shots{position:relative;padding-bottom:40px}
+.shots .desk{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--rule);background:#fff;transform:perspective(1400px) rotateY(8deg);transform-origin:left center}
+.shots .desk::before{content:"";display:block;height:22px;background:#e6e6e1;border-bottom:1px solid var(--rule)}
+.shots .ph{position:absolute;right:-6px;bottom:0;width:31%;border-radius:22px;border:6px solid #111;overflow:hidden;box-shadow:var(--shadow);background:#111}
+.shots img{width:100%;height:auto}
+@media (max-width:980px){.hero-grid{grid-template-columns:1fr}.shots{max-width:560px}}
+
+section.block{padding:84px 0;border-top:1px solid var(--rule)}
+section.block:nth-of-type(even){background:var(--surface)}
+.head{display:grid;gap:14px;margin-bottom:34px}
+.head h2{font-size:clamp(32px,4.4vw,52px)}
+.step{font:800 15px var(--body);color:#fff;background:var(--navy);width:34px;height:34px;border-radius:50%;display:inline-grid;place-items:center}
+
+/* designs */
+.tabs{display:inline-flex;gap:6px;background:var(--surface-2);padding:6px;border-radius:999px;margin-bottom:22px;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;font:600 17px var(--body);padding:10px 22px;border-radius:999px;min-height:46px;color:var(--ink-2)}
+.tabs button[aria-pressed="true"]{background:var(--surface);color:var(--navy);box-shadow:0 2px 10px -4px rgba(0,0,0,.25)}
+.screen{border-radius:16px;overflow:hidden;background:#1d1f24;box-shadow:var(--shadow);border:1px solid #2a2d33}
+.screen .bar{display:flex;align-items:center;gap:8px;height:36px;padding:0 14px;background:#2a2d33;color:#aeb3bc;font-size:13px;direction:ltr}
+.screen .bar i{width:11px;height:11px;border-radius:50%;background:#555a63;display:inline-block}
+.screen .bar span{margin-inline-start:12px;background:#1d1f24;border-radius:6px;padding:3px 12px;flex:1;max-width:420px}
+.viewport{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;background:#fff}
+.viewport iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;transition:opacity .25s ease}
+.viewport iframe.fade{opacity:.25}
+.note{font-size:15px;color:var(--muted);margin-top:14px}
+
+/* phone */
+.phone-row{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+.phone{width:340px;height:690px;border-radius:46px;background:#111;padding:12px;box-shadow:var(--shadow);position:relative}
+.phone::before{content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);width:96px;height:24px;border-radius:14px;background:#111;z-index:2}
+.phone iframe{width:100%;height:100%;border:0;border-radius:36px;background:#fff}
+.ticks{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks li::before{content:"";flex:none;width:24px;height:24px;margin-top:3px;border-radius:50%;background:var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%232E6B3E' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+@media (max-width:860px){.phone-row{grid-template-columns:1fr;justify-items:center}.phone{width:300px;height:610px}}
+
+/* speed */
+.speed{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.meter{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:24px}
+section.block:nth-of-type(even) .meter{background:var(--ground)}
+.meter h3{font:600 17px var(--body);color:var(--ink-2);margin-bottom:18px}
+.row{display:grid;grid-template-columns:86px 1fr 70px;align-items:center;gap:12px;margin-top:12px;font-size:15px}
+.track{height:14px;border-radius:7px;background:var(--surface-2);overflow:hidden}
+.fill{height:100%;border-radius:7px;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.fill.old{background:#9aa0a8}.fill.new{background:var(--green)}
+.row b{font:800 20px var(--display);text-align:left;direction:ltr}
+.row.new b{color:var(--green)}
+@media (max-width:860px){.speed{grid-template-columns:1fr}}
+
+/* editor demo */
+.editor{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:18px;padding:26px;box-shadow:0 10px 40px -30px rgba(0,0,0,.4)}
+.panel .ph{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.panel .ph strong{font:700 19px var(--body)}
+.chip{font-size:13px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--navy-soft);color:var(--navy)}
+.field{display:grid;gap:7px;margin-bottom:18px}
+.field label,.field .lab{font-weight:600;font-size:16px}
+.field input,.field textarea,.field select{width:100%;border:2px solid var(--rule);border-radius:12px;padding:12px 14px;font-size:18px;background:#fff;min-height:52px;transition:border-color .15s}
+.field textarea{min-height:120px;resize:vertical;line-height:1.6}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--navy);outline:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pics button{border:3px solid transparent;border-radius:12px;padding:0;overflow:hidden;background:none;aspect-ratio:1024/660;position:relative}
+.pics button img{width:100%;height:100%;object-fit:cover}
+.pics button[aria-pressed="true"]{border-color:var(--navy)}
+.pics button[aria-pressed="true"]::after{content:"✓";position:absolute;top:6px;left:6px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:grid;place-items:center;font-size:15px}
+.publish{width:100%;min-height:60px;font-size:20px}
+.preview-card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--rule);box-shadow:var(--shadow)}
+.preview-card .mast{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:3px solid var(--brand-red);font:800 20px var(--display)}
+.preview-card .mast b{color:var(--red)}
+.preview-card .mast small{font:500 13px var(--body);color:var(--muted)}
+.preview-card .photo{aspect-ratio:1024/660;background:var(--surface-2)}
+.preview-card .photo img{width:100%;height:100%;object-fit:cover;transition:opacity .2s}
+.preview-card .body{padding:20px 22px 26px}
+.kicker{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;font-weight:600;margin-bottom:10px}
+.kicker span{color:var(--red)}
+.kicker span+span{color:var(--navy)}
+.preview-card h3{font-size:30px;margin-bottom:10px;min-height:1.2em}
+.preview-card .sub{color:var(--ink-2);font-size:18px;margin-bottom:14px;min-height:1.4em}
+.preview-card .txt{color:var(--ink);white-space:pre-line}
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,calc(100% + 40px));background:var(--green);color:#fff;padding:16px 26px;border-radius:14px;font-weight:600;box-shadow:var(--shadow);transition:transform .35s cubic-bezier(.2,.8,.2,1);z-index:50;max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0)}
+@media (max-width:900px){.editor{grid-template-columns:1fr}.preview-wrap{order:-1}}
+
+/* cities */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{display:block;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:26px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+section.block:nth-of-type(even) .card{background:var(--ground)}
+a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card .ico{width:48px;height:48px;border-radius:12px;background:var(--navy-soft);display:grid;place-items:center;margin-bottom:16px}
+.card .ico svg{width:26px;height:26px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:24px;margin-bottom:8px}
+.card p{color:var(--ink-2);font-size:17px}
+.card .go{display:inline-block;margin-top:14px;color:var(--navy);font-weight:600}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+
+footer{background:var(--navy-deep);color:#dfe6f5;padding:64px 0}
+footer h2{color:#fff;font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+footer p{color:#b9c6e2;max-width:56ch}
+footer .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+footer .btn-primary{background:#fff;color:var(--navy-deep)}
+footer small{display:block;margin-top:40px;color:#8ea0c6;font-size:14px}
+
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="logo-mark.svg" alt=""><span><b>כאן</b> ישראל · האתר החדש</span></a>
+    <nav aria-label="חלקי הסיור">
+      <a href="#designs">עיצובים</a><a href="#phone">בטלפון</a><a href="#speed">מהירות</a><a href="#write">כתיבת כתבה</a><a href="#cities">ערים</a><a href="#next">מה בהמשך</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid"><div>
+      <span class="eyebrow">סיור של שתי דקות</span>
+      <h1>משה, ככה ייראה<br><em>כאן ישראל</em> החדש</h1>
+      <p class="lead">אתר מהיר, נקי ומודרני, שנבנה במיוחד בשבילך ובשביל הקוראים שלך — עם כל הכתבות מאז 2002, באותן כתובות בדיוק, וממשק כתיבה פשוט שנוח לעבוד איתו כל יום.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#designs">בוא נתחיל</a>
+        <a class="btn btn-ghost" href="../preview/" target="_blank" rel="noopener">לאתר החדש ↗</a>
+      </div>
+      </div>
+      <div class="shots" aria-hidden="true">
+        <div class="desk"><img src="hero-desktop.webp" width="960" height="600" alt=""></div>
+        <div class="ph"><img src="hero-phone.webp" width="360" height="720" alt=""></div>
+      </div>
+      </div>
+      <div class="facts" role="list">
+        <div role="listitem"><strong>3</strong><span>עיצובים לבחירת הקורא</span></div>
+        <div role="listitem"><strong>27,000+</strong><span>כתבות, באותן כתובות</span></div>
+        <div role="listitem"><strong>172</strong><span>דפי ערים ויישובים</span></div>
+        <div role="listitem"><strong id="fact-speed">24/7</strong><span id="fact-speed-l">גיבוי ושמירה על האתר</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="designs">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="step">1</span>
+        <h2>שלושה עיצובים, אתר אחד</h2>
+        <p class="lead">כל קורא בוחר את הסגנון שנוח לו — קלאסי, דיגיטלי או מגזין לילה. התוכן אותו תוכן, ואתה כותב פעם אחת בלבד. לחץ ונסה:</p>
+      </div>
+      <div class="tabs" role="group" aria-label="בחירת עיצוב">
+        <button type="button" data-d="a" aria-pressed="true">קלאסי</button>
+        <button type="button" data-d="b" aria-pressed="false">דיגיטלי</button>
+        <button type="button" data-d="c" aria-pressed="false">מגזין</button>
+      </div>
+      <div class="screen reveal">
+        <div class="bar"><i></i><i></i><i></i><span>kanisrael.co.il</span></div>
+        <div class="viewport" id="vp"><iframe id="desk" title="עמוד הבית של האתר החדש" src="../preview/#design=a" loading="lazy" tabindex="-1"></iframe></div>
+      </div>
+      <p class="note">זה האתר החדש באמת, עם הכתבות שלך. אפשר לגלול ולדפדף בתוכו, או <a href="../preview/" target="_blank" rel="noopener">לפתוח אותו בחלון מלא</a>.</p>
+    </div>
+  </section>
+
+  <section class="block" id="phone">
+    <div class="wrap phone-row">
+      <div class="reveal">
+        <span class="step">2</span>
+        <h2 style="font-size:clamp(32px,4.4vw,52px);margin:14px 0">רוב הקוראים שלך — בטלפון</h2>
+        <p class="lead">האתר נבנה קודם כול לטלפון: אותיות גדולות וברורות, תמונות שנטענות מהר, ותפריט נוח לאגודל.</p>
+        <ul class="ticks">
+          <li>התמונות שלך מוצגות בשלמותן — בלי חיתוך של הכותרת או הלוגו</li>
+          <li>כל הכותרות ברשימות באותו גובה, כמו שביקשת</li>
+          <li>נגיש לבעלי מוגבלויות, לפי התקן הישראלי</li>
+          <li>שיתוף מהיר לוואטסאפ ולפייסבוק מכל כתבה</li>
+        </ul>
+      </div>
+      <div class="phone reveal"><iframe title="כתבה באתר החדש, בתצוגת טלפון" src="../preview/%D7%94%D7%9E%D7%A8%D7%9B%D7%96-%D7%94%D7%A8%D7%A4%D7%95%D7%90%D7%99-%D7%94%D7%9C%D7%9C-%D7%99%D7%A4%D7%94-%D7%9E%D7%AA%D7%9C%D7%91%D7%98%D7%99%D7%9D-%D7%9C%D7%94%D7%AA%D7%97%D7%A1%D7%9F-%D7%9C%D7%A9/" loading="lazy"></iframe></div>
+    </div>
+  </section>
+
+  <section class="block" id="speed">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="step">3</span>
+        <h2>מהיר יותר — וגוגל אוהב את זה</h2>
+        <p class="lead">מדדנו את האתר הנוכחי ואת האתר החדש באותו כלי של גוגל, בבדיקת טלפון. אתר מהיר מקבל יותר קוראים מגוגל, והקוראים נשארים יותר זמן — במיוחד בטלפון ובחיבור סלולרי.</p>
+      </div>
+      <div class="speed" id="speedbox">
+        <div class="meter reveal">
+          <h3>ציון מהירות (מתוך 100)</h3>
+          <div class="row old"><span>האתר היום</span><div class="track"><div class="fill old" data-v="0"></div></div><b data-k="old-score">–</b></div>
+          <div class="row new"><span>האתר החדש</span><div class="track"><div class="fill new" data-v="0"></div></div><b data-k="new-score">–</b></div>
+        </div>
+        <div class="meter reveal">
+          <h3>זמן עד שהכתבה מופיעה</h3>
+          <div class="row old"><span>האתר היום</span><div class="track"><div class="fill old" data-v="0"></div></div><b data-k="old-lcp">–</b></div>
+          <div class="row new"><span>האתר החדש</span><div class="track"><div class="fill new" data-v="0"></div></div><b data-k="new-lcp">–</b></div>
+        </div>
+        <div class="meter reveal">
+          <h3>משקל עמוד הבית (פחות = מהיר יותר)</h3>
+          <div class="row old"><span>האתר היום</span><div class="track"><div class="fill old" data-v="0"></div></div><b data-k="old-kb">–</b></div>
+          <div class="row new"><span>האתר החדש</span><div class="track"><div class="fill new" data-v="0"></div></div><b data-k="new-kb">–</b></div>
+        </div>
+      </div>
+      <p class="note" id="speednote">נמדד בכלי Lighthouse של גוגל, בהדמיית טלפון.</p>
+    </div>
+  </section>
+
+  <section class="block" id="write">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="step">4</span>
+        <h2>ככה תכתוב כתבה — נסה בעצמך</h2>
+        <p class="lead">בלי עשרות כפתורים ותפריטים: כותרת, תמונה, מדור, עיר וטקסט. מה שאתה כותב מופיע מיד בצד, בדיוק כמו שהקוראים יראו.</p>
+      </div>
+      <div class="editor">
+        <form class="panel reveal" id="ed" autocomplete="off">
+          <div class="ph"><strong>כתבה חדשה</strong><span class="chip">הדגמה — שום דבר לא נשמר</span></div>
+          <div class="field"><label for="f-title">כותרת</label><input id="f-title" maxlength="90"></div>
+          <div class="field"><label for="f-sub">כותרת משנה</label><input id="f-sub" maxlength="140"></div>
+          <div class="field"><span class="lab" id="pics-l">תמונה</span>
+            <div class="pics" role="group" aria-labelledby="pics-l" id="pics"></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="f-sec">מדור</label><select id="f-sec"><option>חדשות</option><option>ערים ויישובים</option><option>בריאות</option><option>כלכלה</option><option>תרבות ופנאי</option></select></div>
+            <div class="field"><label for="f-city">עיר</label><select id="f-city"><option>נתניה</option><option>חדרה</option><option>טבריה</option><option>כפר סבא</option><option>פרדס חנה-כרכור</option></select></div>
+          </div>
+          <div class="field"><label for="f-txt">טקסט</label><textarea id="f-txt"></textarea></div>
+          <button class="btn btn-primary publish" type="submit">פרסום באתר</button>
+        </form>
+        <div class="preview-wrap reveal" aria-live="polite">
+          <article class="preview-card">
+            <div class="mast"><span><b>כאן</b> ישראל</span><small id="p-date"></small></div>
+            <div class="photo"><img id="p-img" alt=""></div>
+            <div class="body">
+              <div class="kicker"><span id="p-sec"></span><span id="p-city"></span></div>
+              <h3 id="p-title"></h3>
+              <p class="sub" id="p-sub"></p>
+              <p class="txt" id="p-txt"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="cities">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="step">5</span>
+        <h2>דף מיוחד לכל עיר ויישוב</h2>
+        <p class="lead">לכל אחת מ-172 הערים והמועצות: ראש העיר, נתונים, קישורים חשובים והכתבות האחרונות מהעיר — באותו מבנה בכל הארץ. הלוגו של העיר ותמונת ראש העיר יתווספו באישור העירייה.</p>
+      </div>
+      <div class="cards">
+        <a class="card reveal" href="../preview/category/%D7%93%D7%A3-%D7%94%D7%91%D7%99%D7%AA-%D7%A8%D7%90%D7%A9%D7%99/%D7%90%D7%A8%D7%A5-%D7%99%D7%A9%D7%A8%D7%90%D7%9C-land-of-israel/%D7%A2%D7%A8%D7%99%D7%9D-%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C/%D7%9E%D7%97%D7%95%D7%96-%D7%94%D7%9E%D7%A8%D7%9B%D7%96/%D7%A0%D7%AA%D7%A0%D7%99%D7%94-%D7%A1%D7%99%D7%98%D7%99-netanya-city-%D7%9B%D7%90%D7%9F-%D7%A0%D7%AA%D7%A0%D7%99%D7%94-%D7%9E%D7%A8%D7%99%D7%9D-%D7%A4%D7%99%D7%99%D7%A8%D7%91%D7%A8%D7%92/" target="_blank" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+          <h3>נתניה</h3><p>ראש העיר, אוכלוסייה, קישורים לעירייה והכתבות האחרונות מהעיר.</p><span class="go">לדף העיר ↗</span>
+        </a>
+        <a class="card reveal" href="../preview/all-cities/" target="_blank" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+          <h3>כל הערים</h3><p>רשימה אחת מסודרת לפי מחוזות, עם חיפוש מהיר של כל עיר ויישוב.</p><span class="go">לרשימת הערים ↗</span>
+        </a>
+        <a class="card reveal" href="../preview/archive/" target="_blank" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5M16 4v5"/></svg></div>
+          <h3>ארכיון לפי שנים</h3><p>כל הכתבות מאז 2002, מסודרות לפי שנה וחודש — גם לקוראים וגם לגוגל.</p><span class="go">לארכיון ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="next">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="step">6</span>
+        <h2>ומה מגיע אחר כך</h2>
+        <p class="lead">אחרי העלייה לאוויר, שני כלים שיחסכו לך שעות עבודה בכל שבוע.</p>
+      </div>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div>
+          <h3>הודעות לעיתונות → טיוטה מוכנה</h3><p>הודעה שמגיעה במייל מעירייה או ממשרד ממשלתי הופכת לטיוטת כתבה מסודרת, עם כותרות, מדור ועיר. אתה קורא, מתקן אם צריך ומפרסם בלחיצה.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M7 21h10M12 17v4"/></svg></div>
+          <h3>מרכז מפרסמים</h3><p>עסק בוחר מקום באתר, עיר ותאריכים, מעלה מודעה ומשלם לבד בתשלום מאובטח. אתה רק מאשר — מודעה שלא אושרה לא מחויבת.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.4 8.5-8 9-4.6-.5-8-4-8-9V7z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+          <h3>בטוח ושלך</h3><p>אתר שנבנה במיוחד בשבילך, בלי תוספים חיצוניים שצריך לעדכן כל הזמן, עם גיבוי יומי ואפשרות לחזור לאתר הישן בכל רגע במעבר.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>זה רק ההתחלה.</h2>
+    <p>אחרי ההעברה הראשונה תקבל קישור פרטי לגרסת הבדיקה של האתר, ותוכל לעקוב אחרי ההתקדמות ולכתוב לנו הערות ישירות. נשמח לשמוע מה דעתך!</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="../preview/" target="_blank" rel="noopener">לאתר החדש ↗</a>
+      <a class="btn btn-ghost" style="border-color:#fff;color:#fff" href="#top">חזרה להתחלה</a>
+    </div>
+    <small>נבנה עבור כאן ישראל על ידי Lisa Agency · גרסת הדגמה, התמונות והלוגו זמניים</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  /* 1. design tabs: the preview reads #design=x on load */
+  var desk=document.getElementById('desk'),vp=document.getElementById('vp');
+  function fit(){var s=vp.clientWidth/1280;desk.style.transform='scale('+s+')';desk.style.height=(vp.clientHeight/s)+'px';}
+  fit();addEventListener('resize',fit);
+  var n=0;
+  document.querySelectorAll('.tabs button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+      desk.classList.add('fade');
+      desk.src='../preview/?t='+(++n)+'#design='+b.dataset.d;
+    });
+  });
+  desk.addEventListener('load',function(){desk.classList.remove('fade')});
+
+  /* 4. editor demo: real photos with their real headlines */
+  var base='../preview/wp-content/uploads/';
+  var stories=[
+    {img:base+'2026/10/kan-seed-live-142511.jpg',t:'נתניה, חנכה במחווה של כבוד – כיכר על שם שלום כחלון ז"ל',s:'כיכר בפינת הרחובות ששת הימים וגורדון, להנצחת שלום כחלון ז"ל',d:'עיריית נתניה, חנכה כיכר בפינת הרחובות ששת הימים וגורדון להנצחת שלום כחלון ז"ל, מראשי קהילת יוצאי לוב בעיר, לוחם במלחמות ישראל ומנהל לשכת המס המיתולוגי.',sec:'ערים ויישובים',city:'נתניה'},
+    {img:base+'2024/10/kan-seed-live-142273.jpg',t:'יער חדרה, מתעורר: הצלחה בסוכות ותכנית פיתוח חדשה',s:'"סוכות של טבע" ביער חדרה, לצד שדרוג שבילים ותוכנית פיתוח נרחבת',d:'מאות משפחות השתתפו בפעילויות "סוכות של טבע" ביער חדרה, לצד שדרוג שבילים שבוצע בעלות של כ-250 אלף ש"ח ותוכנית פיתוח נרחבת שצפויה לצאת לדרך בראשית 2027.',sec:'ערים ויישובים',city:'חדרה'},
+    {img:base+'2026/10/kan-seed-live-142455.jpg',t:'כינרת – עונת הרחצה ננעלת: סיכום שנה מאתגרת באגם של המדינה',s:'איגוד ערים כינרת הודיע על סיום עונת הרחצה והפסקת שירותי ההצלה',d:'איגוד ערים כינרת, הודיע על סיום עונת הרחצה והפסקת שירותי ההצלה ב-10 באוקטובר 2026. העונה, נחתמת עם כ-2.5 מיליון נופשים, ירידה המיוחסת למצב הביטחוני.',sec:'חדשות',city:'טבריה'}
+  ];
+  var $=function(id){return document.getElementById(id)};
+  var pics=$('pics'),cur=0;
+  stories.forEach(function(st,i){
+    var b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed',i===0);b.setAttribute('aria-label','תמונה '+(i+1));
+    var im=document.createElement('img');im.src=st.img;im.alt='';im.loading='lazy';b.appendChild(im);
+    b.addEventListener('click',function(){load(i)});pics.appendChild(b);
+  });
+  function load(i){
+    cur=i;var st=stories[i];
+    pics.querySelectorAll('button').forEach(function(x,j){x.setAttribute('aria-pressed',j===i)});
+    $('f-title').value=st.t;$('f-sub').value=st.s;$('f-sec').value=st.sec;$('f-city').value=st.city;
+    $('f-txt').value=st.d;
+    render();
+  }
+  function render(){
+    $('p-img').src=stories[cur].img;
+    $('p-title').textContent=$('f-title').value||'הכותרת תופיע כאן';
+    $('p-sub').textContent=$('f-sub').value;
+    $('p-sec').textContent=$('f-sec').value;
+    $('p-city').textContent=$('f-city').value;
+    $('p-txt').textContent=$('f-txt').value;
+  }
+  ['f-title','f-sub','f-sec','f-city','f-txt'].forEach(function(id){$(id).addEventListener('input',render);$(id).addEventListener('change',render)});
+  $('p-date').textContent=new Date().toLocaleDateString('he-IL',{day:'numeric',month:'long',year:'numeric'});
+  load(0);
+  var toast=$('toast'),tt;
+  $('ed').addEventListener('submit',function(e){
+    e.preventDefault();
+    toast.textContent='✓ הכתבה פורסמה — היא כבר בעמוד הבית, בדף המדור ובדף העיר '+$('f-city').value;
+    toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},4200);
+  });
+
+  /* 3. speed figures (filled from speed.json, measured with Lighthouse) */
+  fetch('speed.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){
+    if(!d)return;
+    var set=function(k,v){var el=document.querySelector('[data-k="'+k+'"]');if(el)el.textContent=v};
+    set('old-score',d.old.score);set('new-score',d.new.score);
+    set('old-lcp',d.old.lcp+' ש׳');set('new-lcp',d.new.lcp+' ש׳');
+    set('old-kb',d.old.mb+' MB');set('new-kb',d.new.mb+' MB');
+    var m=document.querySelectorAll('#speedbox .meter');
+    var w=[[d.old.score,d.new.score,100],[d.old.lcp,d.new.lcp,Math.max(d.old.lcp,d.new.lcp)],[d.old.mb,d.new.mb,Math.max(d.old.mb,d.new.mb)]];
+    m.forEach(function(meter,i){var f=meter.querySelectorAll('.fill');f[0].dataset.v=w[i][0]/w[i][2]*100;f[1].dataset.v=w[i][1]/w[i][2]*100});
+    if(d.factor){$('fact-speed').textContent='×'+d.factor;$('fact-speed-l').textContent='מהיר יותר בטלפון'}
+    if(d.date)$('speednote').textContent='נמדד בכלי Lighthouse של גוגל, בהדמיית טלפון, ב-'+d.date+'.';
+    grow();
+  }).catch(function(){});
+
+  /* reveal on scroll */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);grow()}})},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});grow()},2500);
+  function grow(){document.querySelectorAll('#speedbox .meter.in .fill').forEach(function(f){f.style.width=(+f.dataset.v||0)+'%'})}
+})();
+</script>
+</body>
+</html>

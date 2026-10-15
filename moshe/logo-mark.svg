@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 164" width="60" height="164" role="img" aria-labelledby="kan-logo-mark-title">
+<title id="kan-logo-mark-title">כאן ישראל</title>
+<!-- Provisional mark: map of Israel carrying the flag, as drawn for the approved demo (kanisrael-demo/src/part2.html). Replaced by the final logo kit. -->
+<defs><clipPath id="kan-logo-mark-clip"><path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z"/></clipPath></defs>
+<g clip-path="url(#kan-logo-mark-clip)"><rect width="60" height="164" fill="#fff"/><rect y="22" width="60" height="11" fill="#0038B8"/><rect y="126" width="60" height="11" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="3.2" stroke-linejoin="round"><path d="M30 60 L47 90 L13 90 Z"/><path d="M30 100 L13 70 L47 70 Z"/></g></g>
+<path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z" fill="none" stroke="#0038B8" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>
