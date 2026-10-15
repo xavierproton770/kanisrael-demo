@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<!-- Provisional site icon: the demo's map-with-flag mark on the flag blue. Replaced by the final logo kit. -->
+<rect width="64" height="64" rx="12" fill="#0038B8"/>
+<g transform="translate(20.7 3.6) scale(.3463)">
+<defs><clipPath id="kan-favicon-clip"><path d="M38 1 L53 5 L50 24 L51 46 L54 70 L48 96 L40 126 L30 162 L21 130 L9 106 L2 100 L8 80 L14 56 L20 36 L24 22 L26 8 Z"/></clipPath></defs>
+<g clip-path="url(#kan-favicon-clip)"><rect width="60" height="164" fill="#fff"/><rect y="22" width="60" height="12" fill="#0038B8"/><rect y="125" width="60" height="12" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="5" stroke-linejoin="round"><path d="M30 60 L47 90 L13 90 Z"/><path d="M30 100 L13 70 L47 70 Z"/></g></g>
+</g>
+</svg>
