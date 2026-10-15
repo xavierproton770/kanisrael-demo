@@ -149,6 +149,13 @@ section.block:nth-of-type(even) .meter{background:var(--ground)}
 
 /* cities */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.built{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:22px}
+.built figure{margin:0;padding:0;overflow:hidden}
+.built img{display:block;width:100%;height:auto;border-bottom:1px solid var(--rule)}
+.built figcaption{padding:20px 22px}
+.built figcaption p{margin:6px 0 0}
+.needs{margin:0 0 18px;padding-inline-start:1.3em;font-size:18px;line-height:1.7}
+.needs li{margin:0 0 10px}
 .card{display:block;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:26px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
 section.block:nth-of-type(even) .card{background:var(--ground)}
 a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
@@ -339,23 +346,32 @@ footer small{display:block;margin-top:40px;color:#8ea0c6;font-size:14px}
     <div class="wrap">
       <div class="head reveal">
         <span class="step">6</span>
-        <h2>ומה מגיע אחר כך</h2>
-        <p class="lead">אחרי העלייה לאוויר, שני כלים שיחסכו לך שעות עבודה בכל שבוע.</p>
+        <h2>וזה כבר בנוי ומחכה לך</h2>
+        <p class="lead">הכלים שיחסכו לך שעות עבודה בכל שבוע כבר עובדים אצלנו בסביבת הבדיקה. אלה צילומי מסך אמיתיים.</p>
       </div>
-      <div class="cards">
-        <div class="card reveal">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div>
-          <h3>הודעות לעיתונות → טיוטה מוכנה</h3><p>הודעה שמגיעה במייל מעירייה או ממשרד ממשלתי הופכת לטיוטת כתבה מסודרת, עם כותרות, מדור ועיר. אתה קורא, מתקן אם צריך ומפרסם בלחיצה.</p>
-        </div>
-        <div class="card reveal">
-          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M7 21h10M12 17v4"/></svg></div>
-          <h3>מרכז מפרסמים</h3><p>עסק בוחר מקום באתר, עיר ותאריכים, מעלה מודעה ומשלם לבד בתשלום מאובטח. אתה רק מאשר — מודעה שלא אושרה לא מחויבת.</p>
-        </div>
-        <div class="card reveal">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.4 8.5-8 9-4.6-.5-8-4-8-9V7z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
-          <h3>בטוח ושלך</h3><p>אתר שנבנה במיוחד בשבילך, בלי תוספים חיצוניים שצריך לעדכן כל הזמן, עם גיבוי יומי ואפשרות לחזור לאתר הישן בכל רגע במעבר.</p>
-        </div>
+      <div class="built">
+        <figure class="card reveal"><img src="shot-draft.webp" width="1100" height="725" loading="lazy" alt="טיוטת כתבה שנכתבה מהודעה לעיתונות, במסך העריכה"><figcaption><h3>הודעה לעיתונות → טיוטה מוכנה</h3><p>מדביקים הודעה, או שהיא מגיעה במייל, ותוך שניות מוכנה טיוטת כתבה ערוכה. אתה קורא, מתקן ומפרסם. שום דבר לא עולה בלי האישור שלך.</p></figcaption></figure>
+        <figure class="card reveal"><img src="shot-ads.webp" width="1100" height="472" loading="lazy" alt="הזמנת מודעה: בחירת מיקוד, משך ושבוע התחלה, עם מחיר מתעדכן"><figcaption><h3>מרכז מפרסמים</h3><p>עסק בוחר מקום, עיר ושבועות, יוצר באנר ומשלם בתשלום מאובטח. השבועות התפוסים מסומנים. אתה מאשר כל מודעה, גם ישירות מהמייל; מודעה שלא אושרה לא מחויבת. (המחירים בצילום לדוגמה.)</p></figcaption></figure>
+        <figure class="card reveal"><img src="shot-portal.webp" width="1100" height="725" loading="lazy" alt="אזור מעקב ופניות בממשק הניהול"><figcaption><h3>מעקב ופניות</h3><p>בתוך ממשק הניהול: שלבי העבודה, ומקום לשלוח לנו הודעה או צילום מסך מכל עמוד.</p></figcaption></figure>
+        <figure class="card reveal"><img src="shot-releases.webp" width="1100" height="725" loading="lazy" alt="רשימת ההודעות לעיתונות והמצב של כל אחת"><figcaption><h3>כל ההודעות במקום אחד</h3><p>כל הודעה לעיתונות שהגיעה, ומה מצבה: ממתינה, טיוטה מוכנה או פורסמה. ובנוסף: ניוזלטר יומי אוטומטי עם הכתבות של היום לכל המנויים.</p></figcaption></figure>
       </div>
+    </div>
+  </section>
+
+  <section class="block" id="needs">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="step">7</span>
+        <h2>מה צריך ממך עכשיו</h2>
+        <p class="lead">ארבעה דברים, ואז מתחילים להעביר את האתר שלך.</p>
+      </div>
+      <ol class="needs reveal">
+        <li><b>העיצוב שיוצג כברירת מחדל</b> — קלאסי, דיגיטלי או מגזין (למעלה בעמוד). הקוראים יוכלו להחליף, אבל אחד מהם יופיע ראשון.</li>
+        <li><b>חתימה על תוכנית העבודה וההעברה הראשונה</b>, כפי שסוכם. ההצעה בתוקף עד 31.10.2026.</li>
+        <li><b>הגישות לאתר הקיים</b>: האחסון (קבצים ובסיס נתונים), הדומיין ו-Cloudflare, וכן Google Search Console, AdSense ו-Bing. כך נעביר את כל 27,000 הכתבות בלי לאבד אף כתובת.</li>
+        <li><b>הלוגו</b>: לבחור אם נשאיר את הלוגו הקיים (ואז לשלוח את הקובץ המקורי), או נעבוד עליו.</li>
+      </ol>
+      <p class="lead reveal">את הפרטים של מרכז המפרסמים (חברת סליקה, מחירון וכו') נבקש בנפרד, אחרי החתימה.</p>
     </div>
   </section>
 </main>
@@ -363,7 +379,7 @@ footer small{display:block;margin-top:40px;color:#8ea0c6;font-size:14px}
 <footer>
   <div class="wrap">
     <h2>זה רק ההתחלה.</h2>
-    <p>אחרי ההעברה הראשונה תקבל קישור פרטי לגרסת הבדיקה של האתר, ותוכל לעקוב אחרי ההתקדמות ולכתוב לנו הערות ישירות. נשמח לשמוע מה דעתך!</p>
+    <p>אחרי ההעברה הראשונה תקבל קישור פרטי לגרסת הבדיקה של האתר, עם אזור "מעקב ופניות": שם נעדכן אותך בכל שלב, ושם תוכל לכתוב לנו ישירות. נשמח לשמוע מה דעתך!</p>
     <div class="actions">
       <a class="btn btn-primary" href="../preview/" target="_blank" rel="noopener">לאתר החדש ↗</a>
       <a class="btn btn-ghost" style="border-color:#fff;color:#fff" href="#top">חזרה להתחלה</a>
